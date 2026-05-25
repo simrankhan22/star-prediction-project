@@ -1,0 +1,32 @@
+── Inference Latency (ms, mean over 20 runs) ───────────────
+ batch_size  Ridge  Random Forest  Gradient Boosting
+          1  0.444         28.516              2.079
+         10  0.844         31.594              2.302
+         50  0.573         30.400              2.396
+        100  0.268         24.300              3.148
+        250  0.285         39.531              9.156
+        500  0.850         45.458             14.403
+       1000  0.296         53.040             19.066
+
+── Throughput (repos / second) ─────────────────────────────
+  Ridge                      2,204,887 repos/sec
+  Random Forest                 17,271 repos/sec
+  Gradient Boosting             52,076 repos/sec
+
+── Model File Sizes ────────────────────────────────────────
+  Ridge                        0.6 KB
+  Random Forest             1926.5 KB
+  Gradient Boosting          370.2 KB
+
+
+  Running predictions and ranking repositories...
+
+--------------------------------------------------
+Rank  | Repository Name           | Predicted Stars
+--------------------------------------------------
+#1    | React UI Components       | 60,726 stars
+#2    | Super Fast API            | 28,646 stars
+#3    | Niche ML Library          | 12,245 stars
+#4    | Legacy Data Parser        | 7,150 stars
+#5    | Personal Blog Template    | 3,900 stars
+--------------------------------------------------
